@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: #FB5F00;
+    color: white;
+    padding: 15px;
+}
+
+header h1 {
+    margin: 0 0 10px 0;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+}
+
+nav a:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+.container {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+footer {
+    background: #f2f2f2;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+/* Mobile Anpassung */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+}
