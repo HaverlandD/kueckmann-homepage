@@ -1,25 +1,32 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dachdeckerei</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dachdeckerei</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+
 <header>
-    <h1>Zimmerei-Dachdeckerei Heinz Kückmann</h1>
-    <nav>
-        <a href="index.html">Start</a>
-        <a href="beratung.html">Beratung & Planung</a>
-        <a href="zimmerei.html">Zimmerei</a>
-        <a href="dachdeckerei.html">Dachdeckerei</a>
-        <a href="ueber-uns.html">Wir über uns</a>
-        <a href="kontakt.html">Kontakt / Anfahrt</a>
-        <a href="stellenangebote.html">Stellenangebote</a>
-        <a href="impressum.html">Impressum / Datenschutz</a>
+    <h1><a href="index.html" class="logo-link">Zimmerei-Dachdeckerei Heinz Kückmann</a></h1>
+    <button class="burger"
+        aria-label="Menü öffnen"
+        aria-expanded="false"
+        aria-controls="main-nav">☰</button>
+    <nav id="main-nav">
+        <a href="index.html" data-page="index">Start</a>
+        <a href="beratung.html" data-page="beratung">Beratung & Planung</a>
+        <a href="zimmerei.html" data-page="zimmerei">Zimmerei</a>
+        <a href="dachdeckerei.html" data-page="dachdeckerei">Dachdeckerei</a>
+        <a href="ueber-uns.html" data-page="ueber-uns">Wir über uns</a>
+        <a href="kontakt.html" data-page="kontakt">Kontakt / Anfahrt</a>
+        <a href="stellenangebote.html" data-page="stellenangebote">Stellenangebote</a>
+        <a href="impressum.html" data-page="impressum">Impressum</a>
     </nav>
 </header>
+
+<div class="overlay"></div>
 
 <main class="container">
     <h2>Dachdeckerei</h2>
@@ -29,5 +36,47 @@
 <footer>
     <p>© 2026 Zimmerei-Dachdeckerei Heinz Kückmann | <a href="tel:+49524478538">05244/78538</a></p>
 </footer>
+
+<script>
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('nav');
+    const links = nav.querySelectorAll('a');
+    const overlay = document.querySelector('.overlay');
+    let lastFocusedElement;
+
+    function openMenu() {
+        lastFocusedElement = document.activeElement;
+        nav.classList.add('open');
+        overlay.classList.add('open');
+        burger.textContent = '✕';
+        burger.setAttribute('aria-expanded', 'true');
+        links[0].focus();
+    }
+
+    function closeMenu() {
+        nav.classList.remove('open');
+        overlay.classList.remove('open');
+        burger.textContent = '☰';
+        burger.setAttribute('aria-expanded', 'false');
+        if (lastFocusedElement) lastFocusedElement.focus();
+    }
+
+    burger.addEventListener('click', () => {
+        nav.classList.contains('open') ? closeMenu() : openMenu();
+    });
+
+    links.forEach(link => link.addEventListener('click', closeMenu));
+    overlay.addEventListener('click', closeMenu);
+    document.addEventListener('keydown', (e) => { if(e.key==='Escape') closeMenu(); });
+    nav.addEventListener('keydown', (e)=>{
+        if(e.key!=='Tab') return;
+        const first = links[0], last = links[links.length-1];
+        if(e.shiftKey && document.activeElement===first){ e.preventDefault(); last.focus(); }
+        else if(!e.shiftKey && document.activeElement===last){ e.preventDefault(); first.focus(); }
+    });
+    const current = location.pathname.split('/').pop().replace('.html','')||'index';
+    links.forEach(link=>{ if(link.dataset.page===current) link.classList.add('active'); });
+</script>
+
 </body>
 </html>
