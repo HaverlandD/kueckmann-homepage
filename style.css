@@ -8,20 +8,39 @@ body {
     line-height: 1.6;
 }
 
+/* ===== HEADER ===== */
 header {
     background: #FB5F00;
     color: white;
-    padding: 15px;
+    padding: 15px 20px;
 }
 
+/* Flex-Container für Logo + Titel + Menü */
+.header-inner {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Logo */
+.logo {
+    height: 55px;
+    width: auto;
+}
+
+/* Firmenname */
 header h1 {
-    margin: 0 0 10px 0;
+    margin: 0;
+    font-size: 1.5rem;
+    white-space: nowrap;
 }
 
+/* Navigation */
 nav {
     display: flex;
-    flex-wrap: wrap;
     gap: 10px;
+    margin-left: auto; /* schiebt Menü nach rechts */
+    flex-wrap: wrap;
 }
 
 nav a {
@@ -29,18 +48,21 @@ nav a {
     text-decoration: none;
     padding: 6px 10px;
     border-radius: 4px;
+    font-size: 0.95rem;
 }
 
 nav a:hover {
     background: rgba(255,255,255,0.2);
 }
 
+/* ===== CONTENT ===== */
 .container {
     padding: 20px;
     max-width: 900px;
     margin: auto;
 }
 
+/* ===== FOOTER ===== */
 footer {
     background: #f2f2f2;
     text-align: center;
@@ -48,9 +70,33 @@ footer {
     margin-top: 40px;
 }
 
-/* Mobile Anpassung */
-@media (max-width: 768px) {
+/* ===== MOBILE ===== */
+@media (max-width: 900px) {
+
+    .header-inner {
+        flex-wrap: wrap;
+    }
+
+    header h1 {
+        font-size: 1.3rem;
+    }
+
+    nav {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 1.1rem;
+    }
+
     nav {
         flex-direction: column;
+        gap: 6px;
     }
 }
