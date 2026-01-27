@@ -8,7 +8,7 @@ header {
    position: sticky;
    top: 0;
    width: 100%;
-   background: #FB5F00;
+   background: #FE5A12;
    color: white;
    padding: 15px 20px;
    display: flex;
@@ -84,7 +84,7 @@ nav a.active {
       top: 100%;
       left: 0;
       width: 100%;
-      background: #FB5F00;
+      background: #FE5A12;
       flex-direction: column;
       text-align: center;
       transform: translateY(-10px);

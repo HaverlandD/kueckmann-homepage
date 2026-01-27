@@ -1,2 +1,2 @@
 # kueckmann-homepage
-Test of website kueckmann
+website kueckmann
