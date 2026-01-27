@@ -28,6 +28,16 @@ header h1 {
    text-decoration: none;
 }
 
+.site-logo {
+  margin: 0;
+}
+
+.logo-link img {
+  height: 60px;   /* Wunschhöhe */
+  width: auto;
+  display: block;
+}
+
 nav {
     display: flex;
     flex-wrap: wrap;
@@ -75,6 +85,11 @@ nav a.active {
 }
 
 @media(max-width:768px) {
+
+   .logo-link img {
+      height: 45px;
+   }
+
    .burger {
       display: block;
    }
