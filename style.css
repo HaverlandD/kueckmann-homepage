@@ -25,6 +25,7 @@ header {
    align-items: center;
    z-index: 1000;
    box-sizing: border-box;
+   gap: 12px;
 }
 
 header h1 {
