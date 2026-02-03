@@ -1,150 +1,204 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kückmann GmbH & Co. KG: Wir über uns</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Kückmann GmbH & Co. KG: Wir über uns</title>
+      <link rel="stylesheet" href="style.css" />
+   </head>
+   <body>
+      <header>
+         <h1 class="site-logo">
+            <a href="index.html" class="logo-link">
+               <img src="img/logo.png" alt="Kückmann GmbH & Co. KG" />
+            </a>
+         </h1>
+         <button
+            class="burger"
+            aria-label="Menü öffnen"
+            aria-expanded="false"
+            aria-controls="main-nav"
+         >
+            ☰
+         </button>
+         <nav id="main-nav">
+            <a href="index.html" data-page="index">Start</a>
+            <a href="beratung.html" data-page="beratung">Beratung & Planung</a>
+            <a href="zimmerei.html" data-page="zimmerei">Zimmerei</a>
+            <a href="dachdeckerei.html" data-page="dachdeckerei">Dachdeckerei</a>
+            <a href="ueber-uns.html" data-page="ueber-uns">Wir über uns</a>
+            <a href="kontakt.html" data-page="kontakt">Kontakt / Anfahrt</a>
+            <a href="stellenangebote.html" data-page="stellenangebote">Stellenangebote</a>
+            <a href="impressum.html" data-page="impressum">Impressum</a>
+         </nav>
+      </header>
 
-<header>
-    <h1 class="site-logo">
-       <a href="index.html" class="logo-link">
-          <img src="img/logo.png"
-              alt="Kückmann GmbH & Co. KG">
-       </a>
-    </h1>
-    <button class="burger"
-        aria-label="Menü öffnen"
-        aria-expanded="false"
-        aria-controls="main-nav">☰</button>
-    <nav id="main-nav">
-        <a href="index.html" data-page="index">Start</a>
-        <a href="beratung.html" data-page="beratung">Beratung & Planung</a>
-        <a href="zimmerei.html" data-page="zimmerei">Zimmerei</a>
-        <a href="dachdeckerei.html" data-page="dachdeckerei">Dachdeckerei</a>
-        <a href="ueber-uns.html" data-page="ueber-uns">Wir über uns</a>
-        <a href="kontakt.html" data-page="kontakt">Kontakt / Anfahrt</a>
-        <a href="stellenangebote.html" data-page="stellenangebote">Stellenangebote</a>
-        <a href="impressum.html" data-page="impressum">Impressum</a>
-    </nav>
-</header>
+      <div class="overlay"></div>
 
-<div class="overlay"></div>
+      <main class="container">
+         <main class="container">
+            <h2>Wir über uns</h2>
+            <p>
+               Die Kückmann GmbH & Co. KG ist ein familiengeführter Meisterbetrieb in der zweiten
+               Generation aus Rietberg. Seit vielen Jahren stehen wir für solides Handwerk,
+               persönliche Betreung und faire Beratung. Unser Ziel ist es, für jeden Kunden eine
+               Lösung zu schaffen, die technisch überzeugt und langfristig Bestand hat.
+            </p>
+            <section class="company-history">
+               <h3>Firmengeschichte</h3>
+               <ul class="timeline">
+                  <li>
+                     <span class="year">2014</span>
+                     <p>
+                        Austausch der alten Abbundanlage gegen eine neue Hundegger SC 3 mit
+                        Vollausstattung für maximale Flexibilität und höhere
+                        Durchlaufgeschwindigkeit.
+                     </p>
+                  </li>
+                  <li>
+                     <span class="year">2013</span>
+                     <p>
+                        Anschaffung eines Herkules-Teleskopladers mit Seilwinde, Arbeitskorb und
+                        Funksteuerung – Arbeiten bis 18 m Höhe problemlos möglich.
+                     </p>
+                  </li>
+                  <li>
+                     <span class="year">2009</span>
+                     <p>
+                        Anschaffung einer Scherenbühne für Arbeiten bis 14 m Höhe zur Verbesserung
+                        von Flexibilität und Sicherheit.
+                     </p>
+                  </li>
+                  <li>
+                     <span class="year">2005</span>
+                     <p>
+                        Erweiterung der Hoffläche, Ausbau des Holzlagers mit Kragarmregalen,
+                        Austausch des Kranwagens gegen einen leistungsstärkeren Gottwald-Kran.
+                     </p>
+                  </li>
+                  <li>
+                     <span class="year">2003</span>
+                     <p>
+                        Austausch der ersten Abbundanlage durch eine neue Hundegger SC 1.
+                        Betriebsfläche wächst auf ca. 11.000 qm.
+                     </p>
+                  </li>
+                  <li>
+                     <span class="year">2000</span>
+                     <p>
+                        Grundstückszukauf um weitere 2.000 qm, Neubau einer freistehenden Halle für
+                        die Produktion von Nagelplattenbindern.
+                     </p>
+                  </li>
+                  <li>
+                     <span class="year">1998</span>
+                     <p>
+                        Kauf eines Hundegger 4-Seiten-Hobels. Software-Umstieg von Zimmerer-Win auf
+                        Trim Fox.
+                     </p>
+                  </li>
+                  <li>
+                     <span class="year">1997</span>
+                     <p>
+                        Grundstückszukauf um 2.500 qm, Neubau eines Hallenanbaus für eine zweite
+                        CNC-Anlage. Kauf einer Hundegger K1 Abbundanlage.
+                     </p>
+                  </li>
+                  <li>
+                     <span class="year">1995</span>
+                     <p>Anschaffung eines Gottwald Autokrans zur Steigerung der Flexibilität.</p>
+                  </li>
+                  <li>
+                     <span class="year">1994</span>
+                     <p>
+                        Kauf der ersten CNC-gesteuerten Abbundanlage (Burmek Typ SPL 160). Erste
+                        Anlage dieser Art in den Kreisen Gütersloh und Bielefeld. Beginn des
+                        Lohnabbunds.
+                     </p>
+                  </li>
+                  <li>
+                     <span class="year">1992</span>
+                     <p>
+                        Umzug nach Rietberg ins Gewerbegebiet „Am Bahnhof“, neues Firmengelände
+                        4.000 qm. Kauf des ersten Seitengabelstaplers.
+                     </p>
+                  </li>
+                  <li>
+                     <span class="year">1989</span>
+                     <p>
+                        Erweiterung der Leistungen um alle anfallenden Dachdeckerarbeiten, Erwerb
+                        des ersten PC mit Software für Angebote, Rechnungen und CAD-Zeichnungen.
+                     </p>
+                  </li>
+                  <li>
+                     <span class="year">1987</span>
+                     <p>Gewerbeanmeldung als Zimmereibetrieb Rietberg im Ortsteil Druffel.</p>
+                  </li>
+                  <li>
+                     <span class="year">1986</span>
+                     <p>
+                        Meisterprüfung des Firmengründers Heinz Kückmann im Zimmererhandwerk vor der
+                        Handwerkskammer Ostwestfalen-Lippe zu Bielefeld.
+                     </p>
+                  </li>
+               </ul>
+            </section>
+         </main>
+      </main>
 
-<main class="container">
-<main class="container">
-    <h2>Wir über uns</h2>
-    <p>Die Kückmann GmbH & Co. KG ist ein familiengeführter Meisterbetrieb in der zweiten Generation aus Rietberg. Seit vielen Jahren stehen wir für solides Handwerk, persönliche Betreung und faire Beratung. Unser Ziel ist es, für jeden Kunden eine Lösung zu schaffen, die technisch überzeugt und langfristig Bestand hat.</p>
-   <section class="company-history">
-     <h3>Firmengeschichte</h3>
-     <ul class="timeline">
-       <li>
-         <span class="year">2014</span>
-         <p>Austausch der alten Abbundanlage gegen eine neue Hundegger SC 3 mit Vollausstattung für maximale Flexibilität und höhere Durchlaufgeschwindigkeit.</p>
-       </li>
-       <li>
-         <span class="year">2013</span>
-         <p>Anschaffung eines Herkules-Teleskopladers mit Seilwinde, Arbeitskorb und Funksteuerung – Arbeiten bis 18 m Höhe problemlos möglich.</p>
-       </li>
-       <li>
-         <span class="year">2009</span>
-         <p>Anschaffung einer Scherenbühne für Arbeiten bis 14 m Höhe zur Verbesserung von Flexibilität und Sicherheit.</p>
-       </li>
-       <li>
-         <span class="year">2005</span>
-         <p>Erweiterung der Hoffläche, Ausbau des Holzlagers mit Kragarmregalen, Austausch des Kranwagens gegen einen leistungsstärkeren Gottwald-Kran.</p>
-       </li>
-       <li>
-         <span class="year">2003</span>
-         <p>Austausch der ersten Abbundanlage durch eine neue Hundegger SC 1. Betriebsfläche wächst auf ca. 11.000 qm.</p>
-       </li>
-       <li>
-         <span class="year">2000</span>
-         <p>Grundstückszukauf um weitere 2.000 qm, Neubau einer freistehenden Halle für die Produktion von Nagelplattenbindern.</p>
-       </li>
-       <li>
-         <span class="year">1998</span>
-         <p>Kauf eines Hundegger 4-Seiten-Hobels. Software-Umstieg von Zimmerer-Win auf Trim Fox.</p>
-       </li>
-       <li>
-         <span class="year">1997</span>
-         <p>Grundstückszukauf um 2.500 qm, Neubau eines Hallenanbaus für eine zweite CNC-Anlage. Kauf einer Hundegger K1 Abbundanlage.</p>
-       </li>
-       <li>
-         <span class="year">1995</span>
-         <p>Anschaffung eines Gottwald Autokrans zur Steigerung der Flexibilität.</p>
-       </li>
-       <li>
-         <span class="year">1994</span>
-         <p>Kauf der ersten CNC-gesteuerten Abbundanlage (Burmek Typ SPL 160). Erste Anlage dieser Art in den Kreisen Gütersloh und Bielefeld. Beginn des Lohnabbunds.</p>
-       </li>
-       <li>
-         <span class="year">1992</span>
-         <p>Umzug nach Rietberg ins Gewerbegebiet „Am Bahnhof“, neues Firmengelände 4.000 qm. Kauf des ersten Seitengabelstaplers.</p>
-       </li>
-       <li>
-         <span class="year">1989</span>
-         <p>Erweiterung der Leistungen um alle anfallenden Dachdeckerarbeiten, Erwerb des ersten PC mit Software für Angebote, Rechnungen und CAD-Zeichnungen.</p>
-       </li>
-       <li>
-         <span class="year">1987</span>
-         <p>Gewerbeanmeldung als Zimmereibetrieb Rietberg im Ortsteil Druffel.</p>
-       </li>
-       <li>
-         <span class="year">1986</span>
-         <p>Meisterprüfung des Firmengründers Heinz Kückmann im Zimmererhandwerk vor der Handwerkskammer Ostwestfalen-Lippe zu Bielefeld.</p>
-       </li>
-     </ul>
-   </section>
-</main>
-</main>
+      <footer>
+         <p>© 2026 Kückmann GmbH & Co. KG | <a href="tel:+49524478538">05244/78538</a></p>
+      </footer>
 
-<footer>
-    <p>© 2026 Kückmann GmbH & Co. KG | <a href="tel:+49524478538">05244/78538</a></p>
-</footer>
+      <script>
+         const burger = document.querySelector('.burger');
+         const nav = document.querySelector('nav');
+         const links = nav.querySelectorAll('a');
+         const overlay = document.querySelector('.overlay');
+         let lastFocusedElement;
 
-<script>
-    const burger = document.querySelector('.burger');
-    const nav = document.querySelector('nav');
-    const links = nav.querySelectorAll('a');
-    const overlay = document.querySelector('.overlay');
-    let lastFocusedElement;
+         function openMenu() {
+            lastFocusedElement = document.activeElement;
+            nav.classList.add('open');
+            overlay.classList.add('open');
+            burger.textContent = '✕';
+            burger.setAttribute('aria-expanded', 'true');
+            links[0].focus();
+         }
 
-    function openMenu() {
-        lastFocusedElement = document.activeElement;
-        nav.classList.add('open');
-        overlay.classList.add('open');
-        burger.textContent = '✕';
-        burger.setAttribute('aria-expanded', 'true');
-        links[0].focus();
-    }
+         function closeMenu() {
+            nav.classList.remove('open');
+            overlay.classList.remove('open');
+            burger.textContent = '☰';
+            burger.setAttribute('aria-expanded', 'false');
+            if (lastFocusedElement) lastFocusedElement.focus();
+         }
 
-    function closeMenu() {
-        nav.classList.remove('open');
-        overlay.classList.remove('open');
-        burger.textContent = '☰';
-        burger.setAttribute('aria-expanded', 'false');
-        if (lastFocusedElement) lastFocusedElement.focus();
-    }
+         burger.addEventListener('click', () => {
+            nav.classList.contains('open') ? closeMenu() : openMenu();
+         });
 
-    burger.addEventListener('click', () => {
-        nav.classList.contains('open') ? closeMenu() : openMenu();
-    });
-
-    links.forEach(link => link.addEventListener('click', closeMenu));
-    overlay.addEventListener('click', closeMenu);
-    document.addEventListener('keydown', (e) => { if(e.key==='Escape') closeMenu(); });
-    nav.addEventListener('keydown', (e)=>{
-        if(e.key!=='Tab') return;
-        const first = links[0], last = links[links.length-1];
-        if(e.shiftKey && document.activeElement===first){ e.preventDefault(); last.focus(); }
-        else if(!e.shiftKey && document.activeElement===last){ e.preventDefault(); first.focus(); }
-    });
-    const current = location.pathname.split('/').pop().replace('.html','')||'index';
-    links.forEach(link=>{ if(link.dataset.page===current) link.classList.add('active'); });
-</script>
-
-</body>
+         links.forEach((link) => link.addEventListener('click', closeMenu));
+         overlay.addEventListener('click', closeMenu);
+         document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeMenu();
+         });
+         nav.addEventListener('keydown', (e) => {
+            if (e.key !== 'Tab') return;
+            const first = links[0],
+               last = links[links.length - 1];
+            if (e.shiftKey && document.activeElement === first) {
+               e.preventDefault();
+               last.focus();
+            } else if (!e.shiftKey && document.activeElement === last) {
+               e.preventDefault();
+               first.focus();
+            }
+         });
+         const current = location.pathname.split('/').pop().replace('.html', '') || 'index';
+         links.forEach((link) => {
+            if (link.dataset.page === current) link.classList.add('active');
+         });
+      </script>
+   </body>
 </html>
