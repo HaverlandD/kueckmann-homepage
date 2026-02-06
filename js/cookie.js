@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document.body.appendChild(banner);
 
   document.getElementById("cookie-ok").addEventListener("click", function () {
-    document.cookie = "cookie_hinweis=ok;max-age=60;path=/";
+    document.cookie = "cookie_hinweis=ok;max-age=86400;path=/";
     banner.remove();
   });
 });
