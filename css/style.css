@@ -145,9 +145,13 @@ nav a.active {
       min-width: 60px;
       width: auto;
       padding: 10px 14px;
-      display: inline-block;
+      display: block;
    }
 
+   .milestone-content {
+      width: 100%;
+   }
+  
 }
 
 .container {
