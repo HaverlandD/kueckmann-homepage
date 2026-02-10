@@ -134,6 +134,20 @@ nav a.active {
       opacity: 1;
       pointer-events: auto;
    }
+
+   .milestone {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+   }
+
+   .milestone-box {
+      min-width: 60px;
+      width: auto;
+      padding: 10px 14px;
+      display: inline-block;
+   }
+
 }
 
 .container {
